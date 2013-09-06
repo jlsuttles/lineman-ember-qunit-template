@@ -1,14 +1,16 @@
 {
-  "name": "ember-template",
-  "title": "An HTML/JS/CSS app",
+  "name": "lineman-ember-qunit-template",
+  "title": "A little example app that pulls Lineman, Ember, and QUnit together.",
   "version": "0.0.1",
   "private": true,
   "author": {
-    "name": "John Doe",
-    "company": "ACME, Inc."
+    "name": "Jessica Lynn Suttles"
   },
   "dependencies": {
     "grunt-ember-handlebars": "0.7.0",
     "lineman": ">= 0.12.3"
+  },
+  "scripts": {
+    "test": "lineman spec-ci"
   }
 }
