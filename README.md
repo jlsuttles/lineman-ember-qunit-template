@@ -1,5 +1,7 @@
 # Lineman + Ember + QUnit
 
+[![Build Status](https://travis-ci.org/jlsuttles/lineman-ember-qunit-template.png?branch=master)](https://travis-ci.org/jlsuttles/lineman-ember-qunit-template)
+
 A little example that pulls [Lineman](https://github.com/testdouble/lineman),
 [Ember](http://emberjs.com), and [QUnit](http://qunitjs.com/) together.
 
