@@ -13,6 +13,14 @@
 
 module.exports = require(process.env['LINEMAN_MAIN']).config.extend('files', {
   //Override file patterns here
+  coffee: {
+    app: "app/js/**/*.coffee",
+    spec: "test/**/*.coffee",
+    specHelpers: "test/helpers/**/*.coffee",
+    generated: "generated/js/app.coffee.js",
+    generatedSpec: "generated/js/test.coffee.js",
+    generatedSpecHelpers: "generated/js/test-helpers.coffee.js"
+  },
   js: {
     vendor: [
       "vendor/js/jquery.js",
