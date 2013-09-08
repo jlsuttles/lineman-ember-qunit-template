@@ -5,33 +5,67 @@
 A little example that pulls [Lineman](https://github.com/testdouble/lineman),
 [Ember](http://emberjs.com), and [QUnit](http://qunitjs.com/) together.
 
-This template is a modified version of [lineman-ember-template](https://github.com/searls/lineman-ember-template) (which uses Jasmine instead of QUnit).
+This template is a modified version of
+[lineman-ember-template](https://github.com/searls/lineman-ember-template)
+(which uses Jasmine instead of QUnit).
 
 ## Setup
 
-If you haven't already done so, first: install [node.js](http://nodejs.org);
-next, install lineman:
-
+1. If you haven't already done so first install [Node.js](http://nodejs.org):
 ```bash
-$ npm install -g lineman
+$ brew install node # if you use homebrew on OS X
 ```
 
-To work from this example, just clone into it and run:
-
+2. Install all application dependencies:
 ```bash
 $ npm install
+```
+
+3. Start the server using [Lineman](https://github.com/testdouble/lineman):
+```bash
 $ lineman run
 ```
 
-And then visit the page at [localhost:8000](http://localhost:8000) to verify
-that it works.
+4. Visit [localhost:8000](http://localhost:8000) to verify that it works.
 
-## Running tests
+5. Run the [QUnit](http://qunitjs.com/) tests in Chrome or headlessly (see below).
 
-To run the tests, you can do one of two things:
 
-1. In one terminal run `lineman run` and (with it still running) run `npm test`,
-   which will launch chrome and an ongoing interactive session with testem.
+## Run Tests Continuously in Chrome
 
-2. For a one-shot test run, first have phantomjs installed (brew install
-   phantomjs) and then run `npm test-ci` which will run the tests headlessly.
+1. If you haven't already done so first start the server:
+```bash
+$ lineman run
+```
+
+2. With the server running, in another terminal run:
+```bash
+$ npm test
+```
+
+
+## Run Tests Headlessly
+
+1. If you haven't already done so first install [PhantomJS](http://phantomjs.org/):
+```bash
+$ brew install phantomjs # if you are using homebrew on OS X
+```
+
+2. Then run:
+```bash
+$ npm test-ci
+```
+
+
+## Contribute
+
+1. Fork it
+1. Get it running
+1. Create your feature branch (`git checkout -b my-new-feature`)
+1. Write your code and **tests**
+1. Commit your changes (`git commit -am 'Add some feature'`)
+1. Push to the branch (`git push origin my-new-feature`)
+1. Create new Pull Request
+
+If you find bugs, have feature requests or questions, please
+[file an issue](https://github.com/jlsuttles/lineman-ember-qunit-template/issues).
