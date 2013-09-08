@@ -11,7 +11,7 @@
     "lineman": ">= 0.12.3"
   },
   "scripts": {
-    "test": "lineman spec"
+    "test": "lineman spec",
     "test-ci": "lineman spec-ci"
   }
 }
