@@ -11,17 +11,22 @@ This template is a modified version of
 
 ## Setup
 
-1. If you haven't already done so first install [Node.js](http://nodejs.org):
+1. If you haven't already done so install [Node.js](http://nodejs.org)
 ```bash
 $ brew install node # if you use homebrew on OS X
 ```
 
-2. Install all application dependencies:
+1. If you haven't already done so install [Lineman](https://github.com/testdouble/lineman) globally
+```bash
+$ npm install -g lineman
+```
+
+2. Install all application dependencies
 ```bash
 $ npm install
 ```
 
-3. Start the server using [Lineman](https://github.com/testdouble/lineman):
+3. Start the server using [Lineman](https://github.com/testdouble/lineman)
 ```bash
 $ lineman run
 ```
@@ -33,12 +38,12 @@ $ lineman run
 
 ## Run Tests Continuously in Chrome
 
-1. If you haven't already done so first start the server:
+1. If you haven't already done so first start the server
 ```bash
 $ lineman run
 ```
 
-2. With the server running, in another terminal run:
+2. With the server running, in another terminal run
 ```bash
 $ lineman spec
 ```
@@ -46,12 +51,12 @@ $ lineman spec
 
 ## Run Tests Headlessly
 
-1. If you haven't already done so first install [PhantomJS](http://phantomjs.org/):
+1. If you haven't already done so first install [PhantomJS](http://phantomjs.org/)
 ```bash
-$ brew install phantomjs # if you are using homebrew on OS X
+$ brew install phantomjs # if you use homebrew on OS X
 ```
 
-2. Then run:
+2. Then run
 ```bash
 $ lineman spec-ci
 ```
