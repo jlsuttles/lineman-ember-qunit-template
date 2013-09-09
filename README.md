@@ -40,7 +40,7 @@ $ lineman run
 
 2. With the server running, in another terminal run:
 ```bash
-$ npm test
+$ lineman spec
 ```
 
 
@@ -53,7 +53,7 @@ $ brew install phantomjs # if you are using homebrew on OS X
 
 2. Then run:
 ```bash
-$ npm test-ci
+$ lineman spec-ci
 ```
 
 
