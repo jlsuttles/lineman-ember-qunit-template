@@ -16,8 +16,8 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend('files', {
   coffee: {
     spec: "test/**/*.coffee",
     specHelpers: "test/helpers/**/*.coffee",
-    generatedSpec: "generated/js/test.coffee.js",
-    generatedSpecHelpers: "generated/js/test-helpers.coffee.js"
+    generatedSpec: "generated/js/test.js",
+    generatedSpecHelpers: "generated/js/test-helpers.js"
   },
   js: {
     vendor: [
